@@ -1,0 +1,76 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+	background-image:url('./img/az_subtle.png');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+::-moz-selection {
+  background: #fc362d;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #fc362d;
+  color: #fff;
+  text-shadow: none;
+}
+header{
+	height:60px;
+	width:810px;
+	background-color:#202020;
+}	
+#map_canvas{
+	height:490px;
+	width:810px;
+	background-color:gray;
+}
+#info_welcome{
+	height:100px;
+	width:810px;
+	background-color:#333333;
+}
+.welcome_p{
+	font-family: 'Open Sans', sans-serif;
+	font-size:0.875em;
+	font-weight:400;
+	color:#999999;
+	font-style:italic;
+	line-height:2.063em;
+}
+
+#made_by{
+	height:70px;
+	width:810px;
+	background-color:#202020;
+}
+footer{
+	height:30px;
+	width:810px;
+	background-color:#dadada;
+}
+footer p{
+	font-family: 'Open Sans', sans-serif;
+	font-size:0.813em;
+	font-weight:700;
+	line-height:30px;
+	color:gray;
+	text-align:center;
+}
+
+.bolder{
+	font-family: 'Open Sans', sans-serif;
+	font-size:1.000em;
+	font-weight:800;	
+}

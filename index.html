@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class=" lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">	
+
+<meta property="og:title" content="">
+<meta property="og:type" content="">
+<meta property="og:url" content=">">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+
+<title>ecomap - by Prologo</title>
+
+<meta name="description" content="">
+<meta name="author" content="Prologo Web Agency">
+<meta name="viewport" content="width=device-width">
+
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="js/html5shiv.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<style>
+.text_line{
+	float:left;
+	width:350px;
+	height:90px;
+	margin:10px;
+}
+</style>	
+</head>
+<body onload="initialize()"> 
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->	
+
+<!-- head -->
+
+<header>
+	head
+</header>
+
+<!-- mapa -->
+
+<div id="map_canvas"> hello</div>
+
+<!-- info bienvenida -->
+
+<div id="info_welcome">
+		<p class="welcome_p text_line">Bienvenido a <spam class="bolder">EcoMap</spam>, la aplicación web que te permite encontrar ese negocio o servicio que buscas, <spam class="bolder">EcoMap</spam> es muy fácil de utilizar.</p>
+</div>	
+
+<!-- patrocinadores -->
+
+<div id="made_by">
+
+</div>
+
+<!-- footer -->
+	
+<footer id="footer">
+<p>Powered by Prologo &amp; Google Maps</p>
+</footer>
+
+<!-- facebook api -->
+
+<script src="https://connect.facebook.net/en_US/all.js"></script>
+ <script>
+ var appId = 'YOUR APP ID',
+     appURL = 'YOUR APP URL';
+
+ FB.init({
+   appId : appId, // App ID
+   status : true, // check login status
+   cookie : true, // enable cookies to allow the server to access the session
+   xfbml : true  // parse XFBML
+ });
+
+ // redirect to app/tab URL if user views outside Facebook
+ // useful for enabling open graph data
+ var isInIframe = (window.location != window.parent.location) ? true : false;
+ if ( !isInIframe && location.host.indexOf('localhost') == -1 ) {
+   // location.href = appURL;
+ }
+
+ // setup tab autogrowth
+ function resize() {
+   FB.Canvas.setAutoGrow();
+ }
+ </script>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+ <script defer src="js/plugins.js"></script>
+ <script defer src="js/script.js"></script>
+
+ <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID. -->
+ <script>
+   var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+   (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+   g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+   s.parentNode.insertBefore(g,s)}(document,'script'));
+ </script>
+	
+</body>
+</html>
